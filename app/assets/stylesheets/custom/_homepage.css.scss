@@ -1,0 +1,153 @@
+.banner {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('hero.jpg');
+	text-align: center;
+	background-size: cover;
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	position: absolute;
+	background-position: center;
+   	height: 650px;
+    left: 0;
+    right: 0;
+    padding-top: 0px;
+    opacity: 0.9;
+
+}
+
+ .banner h1 {
+	font-size: 65px;
+	line-height: 66px;
+	color: white;
+	margin-top: 175px;
+	font-family: 'Montserrat', sans-serif;
+	opacity: 1;
+}
+
+.banner p {
+	font-size: 25px;
+	line-height: 25px;
+	color: white;
+	margin-bottom: 60px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+	padding-bottom: 680px;
+}
+
+/* Home Search Bar */
+.search_desk {
+	border: none;
+	background-color: rgba(0,0,0,0.5);
+	margin-top: 150px;
+}
+
+@media screen  and (max-width: 965px){
+	.banner h1 {
+		font-size: 40px;
+	}
+	.search_desk {
+		width: 50%;
+		margin: 50px auto;
+	}
+}
+
+// @media screen  and (max-width: 950px){
+// 	.banner h1 {
+// 		font-size: 40px;
+// 	}
+// 	.search_desk {
+// 		width: 50%;
+// 		margin: 50px auto;
+// 	}
+// }
+
+
+
+@media screen and (max-width: 550px) {
+	.search_desk {
+	margin-top: 40px;
+	width: 80%;
+	}
+
+	.banner h1 {
+		font-size: 40px;
+	}
+
+	.banner p {
+	font-size: 18px;
+	line-height: 20px;
+	}
+}
+
+.go_place {
+	margin-bottom: 5px;
+}
+
+.in_out_date  {
+	margin-bottom: 5px;
+
+}
+
+#go_place_border {
+	margin-right: 0;
+}
+
+
+
+/* Google maps */
+
+#sidebar {
+	float: right;
+	width: 300px;
+}
+
+#sidebar #widget {
+	width: 250px;
+	height: 400px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #ccc;
+	margin-left: 45px;
+
+}
+
+
+/* Discovery */
+
+.discovery {
+	background-size: cover;
+	background-position: center;
+	height: 326px;
+	margin-bottom: 10px;
+
+}
+
+
+.home_container {
+	width: 95%;
+}
+
+.va-container {
+	display: table;
+	width: 100%;
+	height: 100%;
+	font-weight: bold;
+}
+
+.va-middle {
+	color: #fff;
+	vertical-align: middle;
+	display: table-cell;
+}
+
+.weekend_font h3 {
+	font-size: 32px;
+	line-height: 35px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.weekend_font p {
+	font-size: 16px;
+	line-height: 23px;
+	font-family: 'Montserrat', sans-serif;
+}

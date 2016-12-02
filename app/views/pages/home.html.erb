@@ -1,0 +1,59 @@
+
+<div class="wrapper">
+	
+	<div class="banner">
+		
+		 <h1>WELCOME HOME</h1>
+	    <p>Rent unique places to stay from local hosts in 190+ countries.</p>
+	    <%= link_to "How It Works", how_it_works_path, id: "btn_how_it_works", class: "btn btn-default  btn-lg" %>
+
+	    <%= render 'home_search_form' %>
+
+	</div>
+</div>
+
+
+<%= render 'home_places' %>
+
+	<div class="container-fluid home_container">
+	  <div class="row">
+			<% @rooms.each do |room| %>
+			  	<div class="col-md-4">
+			  		<div class="panel panel-default">
+			  			<div class="panel-heading preview">
+			  				<%= image_tag room.photos[0].image.url(:medium) %>
+			  			</div>
+			  			<div class="panel-body">
+			  			    <%= image_tag room.user.avatar.url, class: "img-circle avatar-small" %>&nbsp;
+			  				<%= link_to room.listing_name, room_path(room) %>
+			  			</div>
+			  		</div>
+			  	</div>
+			<% end %>
+	  </div>
+	  </div>	
+
+	  <script>
+	  $(function() {
+	  	$("#start_date").datepicker({
+		  	dateFormat: 'dd-mm-yy',
+		  	minDate: 0,
+		  	maxDate: '3m',
+		  	onSelect: function(selected) {
+		  		$('#end_date').datepicker("option", "minDate", selected);
+		  		$('#end_date').attr('disabled', false);
+	  	}
+	  	});
+	  	$("#end_date").datepicker({
+		  	dateFormat: 'dd-mm-yy',
+		  	minDate: 0,
+		  	maxDate: '3m',
+		  	onSelect: function(selected) {
+		  		$('#start_date').datepicker("option", "maxDate", selected);
+		  		
+	  	}
+	  	});
+	  })
+
+	  </script>
+

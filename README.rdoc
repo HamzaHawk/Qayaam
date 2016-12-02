@@ -1,0 +1,12 @@
+Airbnb like web app. 
+
+- Sign up with Devise
+- Create room && Upload images
+- Advanced search
+- Room reservation
+- Paypal payment
+- Messaging between host and guest
+- Reviews
+- Rails, Jquery, AWS, SendGrid,Bootstrap
+
+Heroku is being fixed.
